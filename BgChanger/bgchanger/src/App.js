@@ -6,8 +6,8 @@ function App() {
   const [color, setColor] = useState("richblack-700");
 
   return (
-    <div className={`bg-${color} h-full w-full`}>
-      <div className={`px-4 py-2 rounded-lg border border-red-500`}>
+    <div className={`bg-${color} h-screen w-full`}>
+      <div className={`px-4 py-2 rounded-lg border border-red-500 bg-white`}>
         <div className="flex items-center justify-between">
           <button
             onClick={() => setColor("red-950")}
@@ -22,7 +22,7 @@ function App() {
             Blue
           </button>
           <button
-            onClick={() => setColor("green-900")}
+            onClick={() => setColor("green-500")}
             className="bg-green-500 text-white px-4 py-2 rounded-2xl"
           >
             Green
